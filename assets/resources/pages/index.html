@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revivendo o momento</title>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href='../css/style.css'>
+  
+  <!-- fontes -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- cabeçalho -->
+  <header>
+    <div class="menu-desktop">
+      <div class="logo">
+        <a href="./index.html">
+          <img src='../image/logo-marcos.png' alt="logo marcos">
+         </a>
+      </div>
+      <div class="bem-vindo">
+        <img src='../image/bemVindo.gif'alt="tela inicial logo" />
+      </div>
+
+      <div class="buscar" id="buscar2"> 
+        <input type="text" id="bio"  >
+        <img src='../image/mouse.webp' alt="ícone de busca" onclick="botaoPesquisa()">
+      </div>
+    </div>
+  </header>
+ 
+  <!-- lista de navegação -->
+  <nav class="navegacao">
+    <ul>
+      <li>
+        <a href="index.html">
+          <img src='../image/home.png' alt="pagina principal" />
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="novidades.html">
+          <img src='../image/new.png' alt="imagens novidades" />
+          Novidades
+        </a>
+      </li>
+      <li>
+        <a href="jogos-dublado.html">
+          <img src='../image/brasil.png' alt="foto jogos do Brasil" />
+          Jogos dublados
+        </a>
+      </li>
+      <li>
+        <a href="contatos.html">
+          <img src='../image/contato-telefonico.png' alt="imagens de contato" />
+          Contato
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- conteudo principal -->
+  <main>
+    <!-- goku, voce sabia e a imagem do pes -->
+    <section id="conteudo-home">
+      <div class="container-banner">
+        <div class="goku">
+          <img
+            src='../image/goku.gif'alt="imagem goku" />
+          <img
+            src='../image/voce-sabia.gif'
+            alt="imagem você sabia" />
+        </div>
+
+        <div class="treme"> <img src='../image/pes2021-menu.png'
+          alt="imagem-pes" id="pes2021" />
+          </div>
+      </div>
+     
+      <!-- linha reta gif -->
+      <div class="container-reta">
+        <div class="linha-reta">
+          <img
+            src='../image/LINHA.gif'
+            alt="Imagem linha reta" />
+        </div>
+      </div>
+      <!-- area do playstation 2 -->
+      <div class="container-play2">
+        <div class="titulo">
+          <img
+            src='../image/CONTROLE.gif'
+            alt="Imagem controle" />
+          <h2>Noticias Do Console PLAYSTATION 2</h2>
+          <img
+            src='../image/playstation.png'
+            alt="Imagem logo playstation" />
+        </div>
+        <div class="conteudo">
+          <h3>Playstation 2 está de volta com algumas diferenças</h3>
+          <p id="alterarTexto"> O novo Playstation 2 foi criado por um fã que tal como muitos outros, 
+            acabou por não se conformar com o fim do modelo. Assim, desenvolveu 
+            este projeto que será mais ou menos uma mistura entre o PSP e o Playstation 2. 
+          </p>
+          <button id="moverBotaoNoticias" onclick="textoFunção()" class="alterarCor">Próxima notícia...</button>
+          <img src='../image/seta.gif' alt="Imagem seta para baixo" />
+          <h2>Vamos jogar um JOGO DE VOGAIS ? Clique na imagem abaixo e jogue  </h2><br>
+          <a href="jogo-online.html" ><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../image/controle-na-mao.jpg">
+          <!--   <img src='../image/controle-na-mao.jpg'alt="Imagem controle psp" /> --></a> 
+        </div>
+      <div class="dadosNovidades">
+          <H3>QUER SABER QUAIS SÃO OS JOGOS QUE ESTÃO POR VIM NOS ANOS SEGUINTE ? CLIQUE NA IMAGEM ABAIXO</H3>
+          <IMG src="https://tsuge.com.br/abacate-turma-da-monica/images/img-titulo-novidade.png" onclick="clicandoNovidades();"/>
+  
+     </div>  
+      <p> Se você quiser ouvir uma música enquanto acessa o site clique no botão abaixo</p>
+       <button id="apertar" class="alterarCor"> Clique aqui</button><br>
+      <hr>
+       <p id="div1">Quer saber quais são os jogos que estão sendo feito em modo beta ainda para 2023 ? clique abaixo ...</p>
+          <button onclick="botaoJogos2023()" class="alterarCor">Clique aqui</button> <BR><BR>
+       <hr>
+       
+      <button onclick="alterarTexto()" class="alterarCor">Para ver a alteração do Nome do Jogo clique aqui</button>
+<style>
+  .style {
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(to right,black, rgb(223, 11, 177) 50%, red 0,green,blue);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  </style>
+     <div id="divNova"> Dragoo Ball Horoes </div>
+     <img src='../image/dragon-ball.gif' id="dr" alt="logo marcos">
+     <hr> <br><br><br>
+     
+     <button id="larguraBotao">Clique aqui e remova as cores dos botões caso dificulte a leitura</button>
+     <hr><br>
+  </section>
+<H2>Estamos fazendo uma pesquisa para saber quem mais acessa o nosso site , marque uma das opções abaixo por favor !</H2>
+  <input type="radio" id="marcacao" />Público Masculino
+  <input type="radio" id="marcacao2" />Público Feminino
+  <script>
+    $("#marcacao").change( function(){
+  window.alert("Seu voto foi salvo em nossos Banco de Dados , obrigado por votar !");
+  
+});
+
+$("#marcacao2").change( function() {
+  window.alert("Seu voto foi salvo em nossos Banco de Dados , obrigado por votar !");
+  
+});
+
+  </script>
+  
+  </main>
+    </head>
+    <body >
+     
+  <!-- rodapé -->
+  <footer >
+    <div class="redes-sociais">
+      <a href="https://gruposwhats.app/group/137716">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/PlayStation-2-Nostalgia-100440374749194/">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/playstation.nostalgia/">
+        <i class="fa fa-instagram"></i>
+      </a>
+     <div id="redeSocial  onclick="myFunction(event)"> <p >Redes sociais </p></div>
+    </div>
+    <div class="nostalgia">
+      <p>&copy; 2021 - Nostalgia pura</p>
+    </div>
+  </footer>
+
+     <script src="../scripts/main.js"></script> 
+     
+</body>
+</html>
+                 

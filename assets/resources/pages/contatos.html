@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revivendo o momento</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <!-- css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href='../css/style.css'>
+
+
+<!-- fontes -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- cabeçalho -->
+  <header>
+    <div class="menu-Contato">
+      <div class="logo">
+        <a href="./index.html">
+          <img src='../image/logo-marcos.png' alt="logo marcos">
+        </a>
+      </div>
+      <div class="bem-vindo">
+       <center> <img src='../image/bemVindo.gif' alt="tela inicial logo" /></center>
+      </div>
+    </div>
+  </header>
+
+  <!-- lista de navegação -->
+  <nav class="navegacao">
+    <ul id="button">
+      <li>
+        <a href="index.html">
+          <img src='../image/home.png' alt="Buscar..." />
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="novidades.html">
+          <img src='../image/new.png' alt="Buscar..." />
+          Novidades
+        </a>
+      </li>
+      <li>
+        <a href="jogos-dublado.html">
+          <img src='../image/brasil.png' alt="Buscar..." />
+          Jogos dublados
+        </a>
+      </li>
+      <li>
+        <a href="contatos.html">
+          <img src='../image/contato-telefonico.png' alt="Buscar..." />
+          Contato
+        </a>
+      </li>
+    </ul>
+  </nav>
+ 
+  <section>
+  
+    <!-- cabeçalho do formulário -->
+    <form onsubmit="conferir(event)" >
+
+      <div class="textoDeContato">
+        <img src="../image/duvida.png" alt="">
+        <h3>Dúvidas ou links Quebrado</h3>
+        <img src="../image/interrogação.png" alt="">
+      </div>
+      <div>
+        <label for="nome">Qual seu nome completo ?</label>
+        <input type="texto" id="nome" name="nome" pattern="[a-z|A-Z\s]+$" autofocus required  minlength="9" maxlength="100" >
+      </div>
+      <div>
+        <label for="nome">Qual é o assunto ?</label>
+        <input type="texto"  id="assunto" name="assunto" maxlength="100" >
+      </div>
+      <div>
+
+        <label for=telefone">Telefone</label>
+        <input required name="input1" id="telefone"  maxlength="14"/></label><br></p>
+      </div>
+    
+      <label for="foto-do-problema">Mande uma foto do problema que esta ocorrendo</label>
+      <div class="file">
+        <label class="file-label">
+          <input class="arquivos-upload"  type="file">
+        </label>
+
+        <label for="date">Selecione a data do problema:</label>
+        <input type="date" name="calendario" id="selecionar-data"
+        title="A data começa em ano, mês e dia ... yyyy-mm-dd" />
+        </div><br>
+
+        <label for="texto">Descrever oque procura ou oque deseja retratar .</label>
+        <textarea id="descricao" name ="texto_usuario"  placeholder=" Digite aqui..."></textarea> 
+        <div class="button"><br>
+          
+      
+        <button id="bt-enviar" onclick="salvarForm()">Salvar Dados <br>
+        
+        <button id="bt-enviar" onclick="retornos()" value="Enviar">Enviar  <br>
+
+         <button id="bt-enviar" type="submit">Submit </button>
+
+         <div>
+          <button  type="button" onclick="listarCadastros()">Mostrar cadastro</button>
+          <p id="cadastros"></p>
+          <p id="cadastrosJSON"></p>
+        </div>
+        </div>
+        
+    </form>
+  </section>
+
+
+<!-- campo de dúvidas CONTATOS  -->
+  <h4>  Quantos campos são obrigatório para poder enviar um assunto de contato ?</h4>
+  <button div="botaoEspecial"  onclick="descobertaDeElementos()">Clique aqui</button><div></div>
+  <p id="demo"></p>
+
+  <!-- rodapé -->
+  <footer>
+    <div class="redes-sociais">
+      <a href="https://gruposwhats.app/group/137716">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/PlayStation-2-Nostalgia-100440374749194/">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/playstation.nostalgia/">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <p >Redes sociais</p>
+    </div>
+    <div class="nostalgia">
+      <p>&copy; 2021 - Nostalgia pura</p>
+    </div>
+  </footer>
+ <script src="../scripts/contato.js"></script>  
+
+</body>
+</html> 

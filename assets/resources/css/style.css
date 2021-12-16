@@ -1,0 +1,911 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* estilos gerais */
+
+body {
+  background: rgb(223,255,9);
+  background: linear-gradient(43deg, rgba(223,255,9,1) 0%, rgba(18,231,227,1) 79%);
+  color: #000;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#efeitoMenu{
+  position: absolute;
+  top: 20px;
+  right: 50;
+  width: 50%;
+  height: 50px;
+  animation: anima 15s linear;
+background-image: url('https://acegif.com/wp-content/gif/confetti-25.gif');
+}
+@keyframes anima{
+  from {background-position-y: 10vw;}
+  to {background-position-x: 180vw;}
+}
+
+/* cabeçalho */
+
+header {
+  background-color: transparent;
+}
+
+.menu-desktop {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+/*   padding-right: 500px; */
+}
+#bem-vindo {
+  width: 300px;
+}
+
+.logo img {
+  width: 130px;
+}
+
+.bem-vindo img {
+  width: 300px;
+}
+
+.buscar input {
+  width: 300px;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+
+  font-weight: 500;
+}
+
+.buscar img {
+  width: 30px;
+  position: relative;
+  top: 13px;
+  left: -50px;
+  cursor: pointer;
+}
+
+.imagemDaAprovacao{
+  width: 40px;
+}
+
+/* navegação */
+
+.navegacao {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+li:hover {
+  background-image: url('https://static.wixstatic.com/media/896c82_48e80c0280f046a985523f724ab3fdc4~mv2.gif'); 
+  background-size:80%;
+}
+.navegacao ul {
+  display: flex;
+  list-style: none;
+  background-color: lightcoral;
+  border-radius: 30px;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(to bottom, rgb(241, 237, 10), steelblue, rgb(224, 64, 171));
+}
+
+.navegacao ul li {
+  border-bottom: 2px solid #fff;
+  margin: 0 30px 0 0;
+}
+
+  .navegacao ul li:nth-child(4) {
+    margin: 0;
+  }
+
+.navegacao ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  font-size:25px;
+  color: #000;
+  font-weight: 600;
+}
+
+.navegacao ul li a img {
+  width: 35px;
+  margin: 0 10px 0 0;
+}
+
+/* goku e você sabia */
+
+.container-banner {
+  max-width: 1300px;
+  width: 100%;
+  margin: 70px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.goku {
+  display: flex;
+}
+
+.goku img {
+  width: 240px;
+  height: 80px;
+  position: relative;
+  top: 50px;
+}
+
+/* configurações da tabela */
+
+.tabela {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  font-family: sarif;
+  font-size: 40px;
+  margin: 0 0 20px;
+  padding: 10px 0 30px;
+}
+
+.centralizarH1 h1 {
+  padding-left: 10px;
+  padding-right: 22px;
+  margin-bottom: 25px;
+  padding-top: 80px;
+  font-size: 32px;
+}
+
+td {
+  text-align: center;
+  font-size: 23px;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+}
+
+/* jogos dublados */
+
+.container-jogos {
+  background-color: #fff;
+  border: 6px solid #0d0db6;
+  max-width: 800px;
+  width: 100%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../image/fundo-jogos.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards-jogos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+  border-bottom: 2px solid #ddd;
+  padding: 1px 10px 10px;
+
+}
+
+.cards-jogos a {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.conteudo-votacao h4{
+  margin: 0 0 0 50px;
+font-size: 22px;
+}
+
+.conteudo-votacao button{
+  font-size: 25px;
+  position: relative;
+  display:flex;
+  left: 250px;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 10%;
+  height: 25px;
+ font-size: 24px;
+ 
+}
+
+/*  */
+
+.goku img:nth-child(2) {
+  width: 220px;
+  height: auto;
+  top: -20px;
+  left: -80px;
+}
+
+.treme img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+/* linha reta animada */
+
+.container-reta {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.linha-reta img {
+  width: 100%;
+  height: 160px;
+}
+
+
+/* playstation 2 */
+
+.container-play2 {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: -40px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.titulo h2 {
+  margin: 0 80px;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+
+  background-image: linear-gradient(to bottom, rgb(241, 237, 10), steelblue, turquoise);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulo img {
+  width: 90px;
+}
+
+.conteudo {
+  margin: 60px 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.conteudo h3 {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 300;
+  text-decoration: underline;
+  margin: 0 0 20px;
+}
+
+.conteudo p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  text-align: justify;
+}
+
+.conteudo img {
+  display: block;
+  margin: 0 auto 25px;
+}
+
+
+.tabela{
+  display: flex;
+  border-left: #000;
+  background-color: #ffff;
+}
+h4 {
+  text-align: justify;
+}
+
+.conteudo img:nth-last-child(1) {
+  border: 3px solid #ffff00;
+  border-radius: 20px;
+  width: 600px;
+}
+
+/* rodapé */
+
+.redes-sociais,
+.nostalgia {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.redes-sociais {
+  background-color: #109ee0;
+  color: #fff;
+}
+
+.redes-sociais a {
+  margin: 0 30px 0 0;
+
+  /* margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  margin-left: 10px; */
+
+  /* abreviação */
+  /* margin: 10px 5px 6px 10px; */
+}
+
+.redes-sociais p {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.redes-sociais i {
+  font-size: 35px;
+}
+
+.redes-sociais i:hover {
+  color: #fff;
+}
+
+.nostalgia {
+  background-color: #333333;
+  color: #fff;
+  font-weight: 300;
+}
+
+/*jogo online */
+section h1 {
+  margin: 100px 0 50 0;
+  text-align: center;
+  background-color:transparent;
+  font-size: 30px;
+  margin-top: -60px;
+  color: #fff;
+   }
+   
+  
+   .container-banner input {
+    margin: 50px 0 0 0;
+     background-color:write;
+     width: 127px;
+     height: 52px;
+   }
+
+/* formulario de contatos */
+form {
+  /* Centralizar o formulário na pagina */
+  margin: 0 auto;
+  width: 600px;
+
+  /* Ver o esboço do formulário */
+  padding: 8em;
+ 
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: block;
+  
+}
+ #paragrafoFinalizarContato p  {
+  font-size: 25px;
+  text-align: justify;
+  background: linear-gradient(to right, rgb(223, 11, 177) 50%, red 0);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+
+ section form {
+   background-color:transparent;
+ }
+.textoDeContato {
+  font-size: 21px;
+  padding-bottom: 80px;
+  padding-left: 14px; 
+  display: flex;
+  text-align: center;  
+  align-items: center;
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+.textoDeContato h3 {
+  margin: 0 20px;
+}
+
+.textoDeContato img {
+  width: 60px;
+}
+
+.textoDeContato img:nth-of-type(2) {
+  width: 30px;
+}
+
+.moverInterrogacao {
+  padding-left: 280px;
+}
+
+form input {
+  background-color: rgb(180, 180, 180);
+}
+
+label {
+  /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+
+  width: 90px;
+  text-align: right;
+  font-size: 19px;
+}
+
+input, textarea {
+  /* 
+Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+     Por padrão, as áreas de texto possuem a mesma fonte */
+  font: 2em sans-serif;
+
+  /* Para dar o mesmo tamanho a todos os campos de texto*/
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+  border: 1px solid #999;
+  border-radius:20px;
+  font-size: 25px;
+}
+
+
+input:focus, textarea:focus {
+  /* Para dar um pouco de destaque aos elementos ativos*/
+  border-color: #000;
+}
+
+textarea {
+  /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+  vertical-align: top;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 5em;
+}
+
+.button {
+  /* Para posicionar os botões na mesma posição dos campos de texto */
+  padding-left: 90px; /* mesmo tamanho que os elementos do rótulo */
+  border-bottom: 50px;
+ 
+}
+
+button {
+  /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
+  entre os rótulos e seus campos de texto*/
+  margin-left: .1em;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 1px 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: block;
+  padding: 1em;
+  margin: 0 auto;
+  width: 230px;
+  position: relative;
+  left: -66px;
+  top:-1px
+} 
+.botaoEnviar {
+  font-size: 19px;
+}
+
+.botaoEspecial {
+   top:-350px
+}
+ /* configurações da página de jogo online */
+#descricao {
+  background-color: rgb(180, 180, 180);
+  font-weight: bold;
+
+}
+
+#texto {
+  background-color: rgb(180, 180, 180);
+  font-weight: bold;
+
+}
+#inputCenter {
+  display: none;
+  text-align: right;
+}
+
+#letraGrande input {
+text-align: center;
+text-transform: uppercase
+}
+#letraGrande img {
+width: 240px;
+  }
+
+  #fundoJogo {
+    background-image: url('https://i.pinimg.com/originals/a6/e9/da/a6e9da4379e0be5228346060080a7bf1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+
+  #fundoCampeao {
+    background-image: url('https://acegif.com/wp-content/gif/confetti-10.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#textoDeGanhador p {
+  font-size: 80px;
+  text-align: center;
+  margin: 0 0 0 150px;
+}
+/*deixar o texto do ganhador piscando */
+#textoDeGanhador p {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#trofeu {
+  width: 200px;
+}
+
+
+#modificar {
+
+  color:rgb(255, 255, 255);
+  position:relative;
+  top:-100px;
+  left: -135px;
+
+  animation: blinker 1s step-start infinite;
+ font-style: Courier New;
+ 
+ }
+/*fim de jogo */
+#textoFimDeJogo p {
+  font-size: 80px;
+  text-align: center;
+  margin: 0 0 0 150px;
+}
+#textoFimDeJogo img {
+  background-image: url('https://ak.picdn.net/shutterstock/videos/20166535/thumb/4.jpg');
+}
+#fundoFimDeJogo {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe139cd7-0d22-433c-977f-2a672c3fe4ba/dddbeip-180e53f2-9a54-4cfe-a453-66647e5bda4c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZlMTM5Y2Q3LTBkMjItNDMzYy05NzdmLTJhNjcyYzNmZTRiYVwvZGRkYmVpcC0xODBlNTNmMi05YTU0LTRjZmUtYTQ1My02NjY0N2U1YmRhNGMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.L5i4Jp0boWG3zkcM0ftHhqeKu1zZHh9BiRDc3i_aKW8');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+#textoFimDeJogo p {
+  color: yellow;
+  font-size: 30px;
+  margin-top: 250px;
+
+ 
+}
+
+section #myInput {
+  border-radius: 35px;
+    }
+
+    
+  
+    h4{
+      background-color:transparent;
+      font-weight: bold;
+      display: block;
+      padding: 1em;
+      margin: 0 auto;
+      width: 600px;
+      font-size: 20px;
+      position: relative;
+    
+     }
+    /*   movimentar button do index "próxima noticia"; */
+     #moverBotaoNoticias {
+      margin-right: 670px;
+     }
+/*     //////////////////////////////////////////   */
+     .wrapper{
+      position: relative;
+      top: 40vh;
+    }
+   
+    #message{
+      font-size: 26px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .hide{
+      visibility: hidden;
+    }
+    
+    .reveal{
+      visibility: visible;
+    }
+/* /////////////////////////////////////////////////// */
+                             /* página de votos*/
+h6 {
+  font-size: 30px;
+  margin: 0 0 0 380px ;
+}
+
+#modificar {
+    font-size: 30px;
+    margin: 40px 0 0 380px;
+  
+}
+
+#conteudo-votacao fonte {
+  font-size: 120px;
+}
+
+/* 
+                                 novidades index */
+.dadosNovidades h3 { 
+  font-size: 20px;
+}
+
+.dadosNovidades img { 
+  padding-left:270px;
+}
+
+p {
+  font-size: 30px;
+  text-decoration: none ;
+}
+                   /* Tela menu Novidades */
+ #btn {
+   left: 390px;
+   font-size: 24px;
+   background-color: LightSeaGreen;
+   display: flex;
+   width: 430px;
+   top: -20px;
+   
+ }
+
+ .btn2 {
+ top: -145px;
+ background-color: LightSeaGreen;
+ font-size: 24px;
+ display: flex;
+ width: 430px;
+ margin-left: 140px;
+
+}
+
+#olhos {
+  width: 30px;
+}
+
+form h4 {
+  bottom: 120px;
+  right: 200px;
+}
+
+#toggle-sliding {
+  width: 540px;
+  background-color: lightblue;
+}
+#pintar {
+  color: yellow
+}
+       
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue {
+  color: blue;
+}
+
+.alterarCor {
+  background-color: NavajoWhite;
+}
+
+#larguraBotao {
+  width: 500px;
+  background-color: lightcoral;
+}
+/*   ///////////////////////////// */
+/* responsivo */
+
+@media screen and (max-width: 830px) {
+  .bem-vindo {
+    display: none;
+  }
+
+
+@media screen and (max-width: 624px) {
+
+  /* cabeçalho */
+
+  .buscar input {
+    width: 200px;
+    padding: 10px 20px; 
+    top: 12px;
+  }
+
+  .buscar img {
+    width: 25px;
+  }
+
+  /* navegação */
+
+  .navegacao {
+    display: none;
+  }
+
+  /* título do playstation 2 */
+
+  .titulo h2 {
+    margin: 0 30px;
+  }
+
+  .conteudo img:nth-last-child(1) {
+    width: 400px;
+  }
+
+  .ola {
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(to right,black, rgb(223, 11, 177) 50%, red 0,green,blue);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+
+  #bordaDragooBall {
+    border: 8px solid red;
+    width:100px;
+    height:100px;
+    border:solid 1px;
+    border-radius:20px;
+
+  }
+@media screen and (max-width: 525px) {
+  .pes img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .titulo h2 {
+    font-size: 25px;
+  }
+
+  .titulo img {
+    width: 45px;
+  }
+
+  .goku img {
+    width: 200px;
+  }
+  
+  .goku img:nth-child(2) {
+    width: 200px;
+    top: -10px;
+  }
+
+  .pes img {
+    width: 300px;
+    border-radius: 20px;
+  }
+ 
+}
+
+.botaoEnviar {
+  width: 30px;
+  color:red;
+}
+
+@media screen and (max-width: 375px) {
+  .pes img {
+    width: 400px;
+  }
+}
+
+
+
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 5px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -5px;}
+  100% {margin-left: 40;}
+}
+  
+
+  .conteudo img:nth-last-child(1) {
+    width: 350px;
+  }
+}
+
+
+@media screen and (max-width: 407px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .buscar input {
+    width: 200px;
+  }
+
+  .goku img:nth-child(2) {
+    width: 150px;
+    top: 10px;
+    margin: 0 0 20px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 375px) {
+  .buscar input {
+    width: 150px;
+    padding: 10px;
+    top: 12px;
+  }
+
+  .buscar img {
+    width: 22px;
+    top: 11px;
+    left: -40px;
+  }
+
+  .conteudo img {
+    width: 90px;
+  }
+
+  .conteudo img:nth-last-child(1) {
+    width: 290px;
+  }
+
+  .treme img {
+      width: 200px;
+  }
+
+  #container-banner input { 
+    width: 150px;
+    padding: 10px;
+    top: 12px;
+  }
+
+  }
+}
